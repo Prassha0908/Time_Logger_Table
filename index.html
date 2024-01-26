@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Table</title>
+    <!-- <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/C5603AQF69hLOV2mRtg/profile-displayphoto-shrink_100_100/0/1662632740888?e=1711584000&v=beta&t=NaLm4khuiV86DZM4yLoMiF-v8XlstLfPHeucvTStn3g"> -->
+
+    <style>
+        .div-content{
+            background: palevioletred;
+            height: 15rem;
+            width: 15rem;
+        }
+        .div-content-2{
+            margin-top: 2%;
+            text-align: center;
+        }
+        input{
+            border-radius: 8px;
+            height: 30px;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+            border: none;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            vertical-align: middle;
+
+        }
+
+        .inputBox{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-top: 4%;
+        }
+
+        button{
+            margin-left: 10px;
+            width: 90px;
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            margin-top: 1%;
+
+        }
+
+        .square{
+            height: 300px;
+            width: 300px;
+            background-color: deeppink;
+            text-align: center;
+            
+        }
+        .sqr-text{
+            text-align: center;
+            justify-content: center;
+            font-size: larger;
+        }
+
+        #table{
+          border-collapse: collapse;
+          width: 100%;
+          font-family: Arial, Helvetica, sans-serif;
+          border: 1px solid white;
+      }
+      th{
+          background:#ed5286;
+          color: white;
+          height: 40px;
+          padding: 5px;
+          border: 1px solid white;
+  
+      }
+      td{
+          background-color: rgb(225, 225, 225);
+          height: 40px;
+          text-align: center;
+          border: 1px solid white;
+      }
+    </style>
+    
+</head>
+<body>
+  <div style="text-align: center;"><h2>TIME LOGGER TABLE</h2> </div>
+    <div class="inputBox">
+        <div>
+            <input type="text" placeholder="TASK" id="task">  <br><br>
+            <input type="text"  id="discription" placeholder="DISCRIPTION" > <br><br>
+
+            <span style="display: flex; margin-left: 35%; font-size: larger;">
+                <p id="hr">00</p>
+                <p>:</p>
+                <p id="min">00</p>
+                <p>:</p>
+                <p id='sec' class="count">00</p>
+            </span>
+
+            <button id="btn-sel" style="background: rgb(62, 168, 62);">START</button>  
+            <button id="btn-resel" style="background: rgb(250, 201, 55);">RESTART</button> 
+        </div>
+    </div>
+    <br><br>
+    <table border="1" id="table" style="width: 100%;">
+        <tr>
+            <th>task</th>
+            <th>discription</th>
+            <th>duration</th>
+        </tr>
+        
+    </table>
+ 
+</body>
+
+<script src="index.js"> </script>
+
+</html>
